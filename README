@@ -1,0 +1,24 @@
+// README - srracca
+
+Summary
+This project is a program designed to read files given by the user and perform the post-fix operations for them, while printing out the line, and either the boolean or the answer in both rational and double form.
+
+The file contains 2 .cpp files, 1 .h file, and a makefile.
+
+Class 
+The Rational class includes the variables numerator and denominator, 3 constructors, one double that is assigned to a rational, one function to simplify, and one to return a double
+
+Overloaded Operators Include:
+        Input Output: >> <<
+        Math: - + * / += -= /= *=
+        Comparison/Assignment: = == < > <= >= !=
+
+How To Run:
+Open the Command Terminal 
+Manuever to the folder
+Enter the command 'make'
+Enter the commands ./PA5 (the file names of whatever files you want to use, separated by spaces)
+Hit Enter
+
+Problems
+I did not have any problems at all whatsoever with overloading the operators, I found that to be fairly easy. However, I had a hard time with parsing through the file. I first started using arrays to find each of the rationals, however it became easier when I created a stack of the rationals found, and parsed through it in the main file itself. From there I had issues that were quickly fixed by using ignore. After that, the really time consuming problem was with printing the line. No matter what I did, the answers for each line would print but the line itself would not. After having people look through, it was finally fixed by using stringstream file and the like. After that, the rest was learning how to handle errors.
